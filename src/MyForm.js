@@ -22,6 +22,7 @@ const MyForm = () => {
   };
 
   return (
+      <div className="my-form">
     <Form
       onSubmit={handleSubmit}
       render={(formRenderProps) => (
@@ -125,8 +126,11 @@ const MyForm = () => {
             <Button onClick={formRenderProps.onFormReset}>Clear</Button>
           </div>
         </FormElement>
+        
       )}
+      
     />
+    </div>
   );
 };
 
