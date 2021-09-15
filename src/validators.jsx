@@ -17,6 +17,12 @@ export const colorValidator = value => value ? "" : "Color is required.";
 export const requiredValidator = value => value ? "" : "Error: This field is required.";
 export const passwordValidator = value => value && value.length > 8 ? '' : 'Password must be at least 8 symbols.';
 export const addressValidator = value => value ? "" : "Address is required.";
+export const angloValidator = value => value ? "" : "Anglo Value is required.";
+export const scrapeWasteValidator = value => value ? "" : "Scrape Waste Value is required.";
+export const masterBatchValidator = value => value ? "" : "Master Batch Value is required.";
+export const moisturePowderValidator = value => value ? "" : "Moisture Powder Value is required.";
+export const virginPlasticValidator = value => value ? "" : "Virgin Plastic Value is required.";
+
 const userNameGetter = getter('username');
 const emailGetter = getter('email');
 export const formValidator = values => {
